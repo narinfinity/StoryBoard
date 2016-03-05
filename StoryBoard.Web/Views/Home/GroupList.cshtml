@@ -1,0 +1,171 @@
+﻿@using Microsoft.AspNet.Identity
+@{
+    ViewBag.Title = "All Groups";
+}
+
+<div class="jumbotron">
+    <h1>@ViewBag.Title</h1>
+</div>
+
+<script id="myGroup-listview-template" type="text/kendo-x-tmpl">
+    <div class="k-button k-listview-item text-left justified">
+        <a href="@Url.Action("AddEditGroup", "Home", new { })?groupId=#=Id#"><i>Edit</i></a>
+        <a class="pull-right" href="@Url.Action("DeleteGroup", "Home", new { })?groupId=#=Id#"><i>X</i></a>
+        <div class="form-horizontal col-md-12">
+            <div class="form-group">
+                <label for="txt-group-title" class="col-md-2 control-label">Title:</label>
+                <div class="col-md-2">
+                    @Html.TextBox("txt-group-title", "#:Title#", new
+               {
+                   id = "txt-group-title",
+                   @class = "k-textbox",
+                   placeholder = "Title",
+                   maxlength = 128,
+                   @readonly = "",
+                   data_required_msg = "Title is required"
+               })
+                    <span class="k-invalid-msg" data-for="txt-group-title"></span>
+                </div>
+                <div class="col-md-5"></div>
+                <div class="col-md-1">
+                    <label class="control-label"><i>Users:</i></label>
+                    <label class="control-label pull-right">&nbsp;#:UserCount#</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="txt-group-title" class="col-md-2 control-label">Description:</label>
+                <div class="col-md-2">
+                    @Html.TextBox("txt-group-description", "#:Description#", new
+               {
+                   id = "txt-group-description",
+                   @class = "k-textbox",
+                   placeholder = "Description",
+                   maxlength = 256,
+                   @readonly = "",
+                   data_required_msg = "Title is required"
+               })
+                    <span class="k-invalid-msg" data-for="txt-group-Description"></span>
+                </div>
+                <div class="col-md-5"></div>
+                <div class="col-md-1">
+                    <label class="control-label"><i>Stories:</i></label>
+                    <label class="control-label pull-right">&nbsp;#:StoryCount#</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="txt-group-content" class="col-md-2 control-label">Content:</label>
+                <div class="col-md-9">
+                    @Html.TextArea("txt-group-content", "#:Content#", new
+               {
+                   id = "txt-group-content",
+                   rows = 5,
+                   cols = 100,
+                   style = "overflow:auto;resize:none",
+                   @class = "k-textbox",
+                   placeholder = "Content",
+                   maxlength = 512,
+                   @readonly = "",
+                   data_required_msg = "Content is required",
+               })
+                    <span class="k-invalid-msg" data-for="txt-group-content"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</script>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-horizontal">
+            <div class="form-group">
+                <div class="col-md-2">
+                    <a href="@Url.Action("AddEditGroup", "Home", new { groupId = 0 })"><i>Add Group</i></a>
+                </div>
+                <div class="col-md-2 pull-right">
+                    <a href="@Url.Action("StoryList", "Home")" class="pull-right"><i>Back to Stories</i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <!-- The div below will become our Kendo UI ListView -->
+                <div id="myGroup-listview" class="k-listview"></div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+@section Scripts {
+
+    <script type="text/javascript">
+        /// <reference path="jquery-1.10.2.js" />
+        $(function () {
+            window.nsGroupList.init();
+        });
+
+        ; (function (me) {
+
+            me.lsvGroups = {
+                listViewSelector: '#myGroup-listview',
+                templateSelector: '#myGroup-listview-template',
+                selectable: 'single',//"multiple",
+                dataSource: {
+                    data: [],
+                    schema: {
+                        model: {
+                            id: "Id",
+                            fields: {
+                                Id: { type: "number" },
+                                Title: { type: "string" },
+                                Description: { type: "string" },
+                                Content: { type: "string" },
+                                UserCount: { type: "number" },
+                                StoryCount: { type: "number" },
+                            }
+                        }
+                    }
+                },
+                events: {
+                    change: function (e) {
+                        var sender = $(e.sender)[0],
+                        selectedFile = sender.dataItem(sender.select()[0]);
+                    },
+                },
+
+                init: function (selector, options) {
+                    return $(selector).kendoListView(options);
+                },
+            };
+            me.lsvGroups.options = {
+                dataSource: me.lsvGroups.dataSource,
+                template: kendo.template($(me.lsvGroups.templateSelector).html()),
+                selectable: me.lsvGroups.selectable,
+                change: me.lsvGroups.events.change,
+            };
+
+            me.init = function () {
+                $.getJSON('@Url.Action("", "api/Group")', { userId: '' }, function (groups) {                    
+                    $.each(groups, function (i, el) {
+                        var users = {};
+                        $(el.Stories).each(function (index, story) { users[story.UserId]=true; });
+
+                        me.lsvGroups.dataSource.data.push({
+                            Id: el.Id,
+                            Title: el.Title,
+                            Description: el.Description,
+                            Content: (el.Content ? el.Content : ''),
+                            UserCount: Object.keys(users).length,
+                            StoryCount: el.Stories.length
+                        });
+                    });
+                    me.lsvGroup = me.lsvGroups.init(me.lsvGroups.listViewSelector, me.lsvGroups.options);
+                });
+            };
+
+        })(window.nsGroupList = window.nsGroupList || {});
+
+    </script>
+}

@@ -1,0 +1,13 @@
+D:\Projects\StoryBoard\StoryBoard.Web.Selenium\bin\Debug\StoryBoard.Web.Selenium.dll
+D:\Projects\StoryBoard\StoryBoard.Web.Selenium\bin\Debug\StoryBoard.Web.Selenium.pdb
+D:\Projects\StoryBoard\StoryBoard.Web.Selenium\bin\Debug\Selenium.WebDriverBackedSelenium.dll
+D:\Projects\StoryBoard\StoryBoard.Web.Selenium\bin\Debug\ThoughtWorks.Selenium.Core.dll
+D:\Projects\StoryBoard\StoryBoard.Web.Selenium\bin\Debug\WebDriver.dll
+D:\Projects\StoryBoard\StoryBoard.Web.Selenium\bin\Debug\WebDriver.Support.dll
+D:\Projects\StoryBoard\StoryBoard.Web.Selenium\bin\Debug\Selenium.WebDriverBackedSelenium.xml
+D:\Projects\StoryBoard\StoryBoard.Web.Selenium\bin\Debug\ThoughtWorks.Selenium.Core.xml
+D:\Projects\StoryBoard\StoryBoard.Web.Selenium\bin\Debug\WebDriver.xml
+D:\Projects\StoryBoard\StoryBoard.Web.Selenium\bin\Debug\WebDriver.Support.xml
+D:\Projects\StoryBoard\StoryBoard.Web.Selenium\obj\Debug\StoryBoard.Web.Selenium.dll
+D:\Projects\StoryBoard\StoryBoard.Web.Selenium\obj\Debug\StoryBoard.Web.Selenium.pdb
+D:\Projects\StoryBoard\StoryBoard.Web.Selenium\obj\Debug\StoryBoard.Web.Selenium.csprojResolveAssemblyReference.cache

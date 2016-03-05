@@ -1,0 +1,82 @@
+﻿html {
+    height: 100%;
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    height: 100%;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+    textarea.k-textbox {
+        max-width: 100%;
+        width: 100%;
+    }
+
+.heightfull {
+    height: 100%;
+    position: relative;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.justified {
+    width: 99.7%;
+    display: inline-block;
+}
+/*minheight*/
+.minheight300 {
+    min-height: 300px;
+}
+
+.k-listview {
+    /*border: 1px solid #808080;*/
+    border-radius: 3px;
+    height: 100%;
+    padding: 2px;
+}
+
+.k-listview-item {
+    border: 1px solid #808080;
+    /*height: 25px;*/
+    /*padding: 1px 10px;*/
+    margin: 2px;
+}
+
+div.k-listview-item.k-state-selected {
+    background-color: #f6f3f3;
+    color:#2e2e2e;
+}
+
+.k-widget {
+    width: 100%;
+}
+
+.form-group {
+    margin: 20px;
+}

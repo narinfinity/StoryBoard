@@ -1,0 +1,14 @@
+D:\Projects\StoryBoard\StoryBoard.Core.Entities\bin\Debug\StoryBoard.Core.Entities.dll.config
+D:\Projects\StoryBoard\StoryBoard.Core.Entities\bin\Debug\StoryBoard.Core.Entities.dll
+D:\Projects\StoryBoard\StoryBoard.Core.Entities\bin\Debug\StoryBoard.Core.Entities.pdb
+D:\Projects\StoryBoard\StoryBoard.Core.Entities\bin\Debug\EntityFramework.dll
+D:\Projects\StoryBoard\StoryBoard.Core.Entities\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\StoryBoard\StoryBoard.Core.Entities\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Projects\StoryBoard\StoryBoard.Core.Entities\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Projects\StoryBoard\StoryBoard.Core.Entities\bin\Debug\EntityFramework.xml
+D:\Projects\StoryBoard\StoryBoard.Core.Entities\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\StoryBoard\StoryBoard.Core.Entities\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\Projects\StoryBoard\StoryBoard.Core.Entities\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Projects\StoryBoard\StoryBoard.Core.Entities\obj\Debug\StoryBoard.Core.Entities.dll
+D:\Projects\StoryBoard\StoryBoard.Core.Entities\obj\Debug\StoryBoard.Core.Entities.pdb
+D:\Projects\StoryBoard\StoryBoard.Core.Entities\obj\Debug\StoryBoard.Core.Entities.csprojResolveAssemblyReference.cache

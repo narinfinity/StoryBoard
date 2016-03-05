@@ -1,0 +1,3 @@
+Enable-Migrations -ContextTypeName StoryBoard.Infrastructure.Data.ApplicationDbContext -MigrationsDirectory Migrations.ApplicationDbContext
+Add-Migration -ConfigurationTypeName StoryBoard.Infrastructure.Data.Migrations.ApplicationDbContext.Configuration "InitialCreate"
+Update-Database -ConfigurationTypeName StoryBoard.Infrastructure.Data.Migrations.ApplicationDbContext.Configuration -Verbose

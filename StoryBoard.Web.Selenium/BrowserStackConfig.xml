@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<browserStack>
+  <ipad active="off">
+    <browserName>
+      <!--iPad-->
+    </browserName>
+    <platform>
+      <!--iPad 2 (5.0)-->
+    </platform>
+    <device>
+      <!--MAC-->
+    </device>
+  </ipad>
+
+  <Browsers active="on">
+
+    <!-- Below information will be useless if any 
+         of Ipad configuration is filled -->
+    <browser>IE</browser>
+    <browser_version>9.0</browser_version>
+    <os>Windows</os>
+    <os_version>7</os_version>
+  </Browsers>
+
+  <SignUpUrl>https://host:7919/</SignUpUrl>
+</browserStack>
+
+<!--(br.Name == "IE") && (br.Version == "9.0") && (br.Os == "Windows") && (br.OsVersion == "7")-->
+<!--(br.Name == "IE") && (br.Version == "8.0") && (br.Os == "Windows") && (br.OsVersion == "7")-->
+<!--(br.Name == "IE") && (br.Version == "7.0") && (br.Os == "Windows") && (br.OsVersion == "7")-->
+<!--(br.Name == "IE") && (br.Version == "8.0") && (br.Os == "Windows") && (br.OsVersion == "XP")-->
+<!--(br.Name == "IE") && (br.Version == "7.0") && (br.Os == "Windows") && (br.OsVersion == "XP")-->
+<!--(br.Name == "iPad") && (br.Version == "iPad 2 (5.0)") && (br.Os == "MAC")-->

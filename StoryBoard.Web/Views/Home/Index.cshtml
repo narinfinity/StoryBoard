@@ -1,0 +1,39 @@
+﻿@model IEnumerable<StoryBoard.Web.Models.StoryViewModel>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>My Stories</h1>
+    <p class="lead">This is a specific task of mine</p>
+    @*<p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>*@
+</div>
+
+<script id="myStory-listview-template" type="text/kendo-x-tmpl">
+    <span class="k-button k-listview-item text-left justified">#:FileName#</span>
+</script>
+
+<div class="row">
+    <div class="col-md-6">
+        <form role="form" class="form-horizontal">
+            <div class="form-group">
+
+                @*<label for="myGroup-dropDown" class="control-label col-md-6">Groups of stories:</label>*@
+                <div class="col-md-6">
+                    @*<input class="form-control" id="myGroup-dropDown" />*@
+                </div>
+
+            </div>
+        </form> 
+</div>
+    <div class="col-md-6">
+        <div class="container-fluid" id="myStoryContent"></div>
+    </div>
+</div>
+
+@section Scripts {
+    <script type="text/javascript">
+       
+
+    </script>
+}
