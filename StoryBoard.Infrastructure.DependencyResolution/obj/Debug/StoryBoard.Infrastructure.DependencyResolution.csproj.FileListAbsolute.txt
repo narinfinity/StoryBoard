@@ -60,3 +60,7 @@ D:\Projects\StoryBoard\StoryBoard.Infrastructure.DependencyResolution\bin\Debug\
 D:\Projects\StoryBoard\StoryBoard.Infrastructure.DependencyResolution\bin\Debug\Microsoft.Owin.Security.OAuth.xml
 D:\Projects\StoryBoard\StoryBoard.Infrastructure.DependencyResolution\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
 D:\Projects\StoryBoard\StoryBoard.Infrastructure.DependencyResolution\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\Projects\StoryBoard\StoryBoard.Infrastructure.DependencyResolution\bin\Debug\StoryBoard.Services.Application.dll
+D:\Projects\StoryBoard\StoryBoard.Infrastructure.DependencyResolution\bin\Debug\StoryBoard.Services.Domain.dll
+D:\Projects\StoryBoard\StoryBoard.Infrastructure.DependencyResolution\bin\Debug\StoryBoard.Services.Application.pdb
+D:\Projects\StoryBoard\StoryBoard.Infrastructure.DependencyResolution\bin\Debug\StoryBoard.Services.Domain.pdb

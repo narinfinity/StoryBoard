@@ -170,6 +170,14 @@
       <Project>{eeb53e87-e16c-434d-8599-8c67839738cf}</Project>
       <Name>StoryBoard.Infrastructure.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\StoryBoard.Services.Application\StoryBoard.Services.Application.csproj">
+      <Project>{1c7df6b7-7c4a-422e-a66d-2a73538f901a}</Project>
+      <Name>StoryBoard.Services.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StoryBoard.Services.Domain\StoryBoard.Services.Domain.csproj">
+      <Project>{d708314f-8412-43c2-8ef3-5a7502e4320a}</Project>
+      <Name>StoryBoard.Services.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -10,7 +10,7 @@ namespace StoryBoard.Infrastructure.Data
 {
     public class DataContext : DbContext, IDataContext
     {
-        //static DataContext() { Database.SetInitializer<DataContext>(null); }
+        static DataContext() { Database.SetInitializer<DataContext>(null); }
         public DataContext()
             : base("IdentityDbConnection")
         {

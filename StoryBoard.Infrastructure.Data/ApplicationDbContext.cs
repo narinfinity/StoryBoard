@@ -6,9 +6,18 @@ namespace StoryBoard.Infrastructure.Data
 {
     public class ApplicationDbContext : IdentityDbContext<User>
     {
+        static ApplicationDbContext()
+        {
+            Database.SetInitializer<ApplicationDbContext>(null);
+        }
         public ApplicationDbContext()
             : base("IdentityDbConnection", throwIfV1Schema: false)
         {
+            Configuration.LazyLoadingEnabled = true;
+            Configuration.AutoDetectChangesEnabled = false;
+            Configuration.ProxyCreationEnabled = false;
+            Configuration.EnsureTransactionsForFunctionsAndCommands = false;
+            Configuration.UseDatabaseNullSemantics = false;
         }
 
         public static ApplicationDbContext Create()
