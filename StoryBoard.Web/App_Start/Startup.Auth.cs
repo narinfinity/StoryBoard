@@ -5,7 +5,6 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Owin;
 using StoryBoard.Core.Entities;
-using StoryBoard.Infrastructure.Data;
 using System.Web.Http;
 
 namespace StoryBoard.Web
@@ -21,7 +20,8 @@ namespace StoryBoard.Web
         public void ConfigureAuth(IAppBuilder app)
         {
             // Configure the db context, user manager and signin manager to use a single instance per request
-            app.CreatePerOwinContext(ApplicationDbContext.Create);
+            var dbContext = (System.Data.Entity.DbContext)System.Web.Mvc.DependencyResolver.Current.GetService(typeof(System.Data.Entity.DbContext));
+            app.CreatePerOwinContext(() => { return dbContext; });
             app.CreatePerOwinContext<ApplicationUserManager>(ApplicationUserManager.Create);
             app.CreatePerOwinContext<ApplicationSignInManager>(ApplicationSignInManager.Create);
 

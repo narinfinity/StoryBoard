@@ -10,4 +10,3 @@ D:\Projects\StoryBoard\StoryBoard.Web.Selenium\bin\Debug\WebDriver.xml
 D:\Projects\StoryBoard\StoryBoard.Web.Selenium\bin\Debug\WebDriver.Support.xml
 D:\Projects\StoryBoard\StoryBoard.Web.Selenium\obj\Debug\StoryBoard.Web.Selenium.dll
 D:\Projects\StoryBoard\StoryBoard.Web.Selenium\obj\Debug\StoryBoard.Web.Selenium.pdb
-D:\Projects\StoryBoard\StoryBoard.Web.Selenium\obj\Debug\StoryBoard.Web.Selenium.csprojResolveAssemblyReference.cache

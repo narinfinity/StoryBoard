@@ -1255,10 +1255,6 @@
       <Project>{72a18dbf-aee8-4189-a0ee-5907e8465fe4}</Project>
       <Name>StoryBoard.Core.Interfaces</Name>
     </ProjectReference>
-    <ProjectReference Include="..\StoryBoard.Infrastructure.Data\StoryBoard.Infrastructure.Data.csproj">
-      <Project>{eeb53e87-e16c-434d-8599-8c67839738cf}</Project>
-      <Name>StoryBoard.Infrastructure.Data</Name>
-    </ProjectReference>
     <ProjectReference Include="..\StoryBoard.Infrastructure.DependencyResolution\StoryBoard.Infrastructure.DependencyResolution.csproj">
       <Project>{6e355dba-9a37-4514-b2b5-58c26759e418}</Project>
       <Name>StoryBoard.Infrastructure.DependencyResolution</Name>

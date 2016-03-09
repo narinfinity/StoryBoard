@@ -26,6 +26,7 @@ namespace StoryBoard.Infrastructure.DependencyResolution
             container.RegisterType<DbContext, ApplicationDbContext>(new HierarchicalLifetimeManager());
             container.RegisterType<UserManager<User>>(new HierarchicalLifetimeManager());
             container.RegisterType<IUserStore<User>, UserStore<User>>(new HierarchicalLifetimeManager());
+
             container.RegisterType<IDataContext, DataContext>(new HierarchicalLifetimeManager());
             container.RegisterType<IStoryRepository, StoryRepository>(new HierarchicalLifetimeManager());
             container.RegisterType<IGroupRepository, GroupRepository>(new HierarchicalLifetimeManager());

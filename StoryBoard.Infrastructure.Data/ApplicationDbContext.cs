@@ -19,11 +19,7 @@ namespace StoryBoard.Infrastructure.Data
             Configuration.EnsureTransactionsForFunctionsAndCommands = false;
             Configuration.UseDatabaseNullSemantics = false;
         }
-
-        public static ApplicationDbContext Create()
-        {
-            return new ApplicationDbContext();
-        }
+       
         public DbSet<Story> Stories { get; set; }
         public DbSet<Group> Groups { get; set; }
 

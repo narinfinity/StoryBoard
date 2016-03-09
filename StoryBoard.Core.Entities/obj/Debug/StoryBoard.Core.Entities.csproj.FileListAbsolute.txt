@@ -11,4 +11,3 @@ D:\Projects\StoryBoard\StoryBoard.Core.Entities\bin\Debug\Microsoft.AspNet.Ident
 D:\Projects\StoryBoard\StoryBoard.Core.Entities\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 D:\Projects\StoryBoard\StoryBoard.Core.Entities\obj\Debug\StoryBoard.Core.Entities.dll
 D:\Projects\StoryBoard\StoryBoard.Core.Entities\obj\Debug\StoryBoard.Core.Entities.pdb
-D:\Projects\StoryBoard\StoryBoard.Core.Entities\obj\Debug\StoryBoard.Core.Entities.csprojResolveAssemblyReference.cache
