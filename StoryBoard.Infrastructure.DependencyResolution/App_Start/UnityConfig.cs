@@ -24,7 +24,7 @@ namespace StoryBoard.Infrastructure.DependencyResolution
 
             container.RegisterType<IAuthenticationManager>(new InjectionFactory(c => HttpContext.Current.GetOwinContext().Authentication));
             container.RegisterType<DbContext, ApplicationDbContext>(new HierarchicalLifetimeManager());
-            container.RegisterType<UserManager<User>>(new HierarchicalLifetimeManager());
+
             container.RegisterType<IUserStore<User>, UserStore<User>>(new HierarchicalLifetimeManager(), new InjectionConstructor(container.Resolve<DbContext>()));
 
             container.RegisterType<IDataContext, DataContext>(new HierarchicalLifetimeManager());
