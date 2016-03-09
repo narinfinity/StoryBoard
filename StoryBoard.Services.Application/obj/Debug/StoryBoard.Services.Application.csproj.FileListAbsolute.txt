@@ -1,0 +1,17 @@
+D:\Projects\StoryBoard\StoryBoard.Services.Application\bin\Debug\StoryBoard.Services.Application.dll
+D:\Projects\StoryBoard\StoryBoard.Services.Application\bin\Debug\StoryBoard.Services.Application.pdb
+D:\Projects\StoryBoard\StoryBoard.Services.Application\bin\Debug\StoryBoard.Core.Entities.dll
+D:\Projects\StoryBoard\StoryBoard.Services.Application\bin\Debug\StoryBoard.Core.Interfaces.dll
+D:\Projects\StoryBoard\StoryBoard.Services.Application\bin\Debug\StoryBoard.Services.Domain.dll
+D:\Projects\StoryBoard\StoryBoard.Services.Application\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Projects\StoryBoard\StoryBoard.Services.Application\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Projects\StoryBoard\StoryBoard.Services.Application\bin\Debug\EntityFramework.dll
+D:\Projects\StoryBoard\StoryBoard.Services.Application\bin\Debug\StoryBoard.Core.Entities.pdb
+D:\Projects\StoryBoard\StoryBoard.Services.Application\bin\Debug\StoryBoard.Core.Interfaces.pdb
+D:\Projects\StoryBoard\StoryBoard.Services.Application\bin\Debug\StoryBoard.Services.Domain.pdb
+D:\Projects\StoryBoard\StoryBoard.Services.Application\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Projects\StoryBoard\StoryBoard.Services.Application\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\Projects\StoryBoard\StoryBoard.Services.Application\bin\Debug\EntityFramework.xml
+D:\Projects\StoryBoard\StoryBoard.Services.Application\obj\Debug\StoryBoard.Services.Application.csprojResolveAssemblyReference.cache
+D:\Projects\StoryBoard\StoryBoard.Services.Application\obj\Debug\StoryBoard.Services.Application.dll
+D:\Projects\StoryBoard\StoryBoard.Services.Application\obj\Debug\StoryBoard.Services.Application.pdb
