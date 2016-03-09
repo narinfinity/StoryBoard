@@ -38,7 +38,8 @@ namespace StoryBoard.Web
 
         public static ApplicationUserManager Create(IdentityFactoryOptions<ApplicationUserManager> options, IOwinContext context) 
         {
-            var manager = new ApplicationUserManager(new UserStore<User>(context.Get<System.Data.Entity.DbContext>()));
+            var userStore = System.Web.Mvc.DependencyResolver.Current.GetService(typeof(IUserStore<User>));
+            var manager = new ApplicationUserManager((IUserStore<User>)userStore);
             // Configure validation logic for usernames
             manager.UserValidator = new UserValidator<User>(manager)
             {
