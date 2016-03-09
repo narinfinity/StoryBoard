@@ -14,7 +14,11 @@ namespace StoryBoard.Infrastructure.Data
         public DataContext()
             : base("IdentityDbConnection")
         {
-           
+            Configuration.LazyLoadingEnabled = true;
+            Configuration.AutoDetectChangesEnabled = false;
+            Configuration.ProxyCreationEnabled = false;
+            Configuration.EnsureTransactionsForFunctionsAndCommands = false;
+            Configuration.UseDatabaseNullSemantics = false;
         }
 
         public DbSet<Story> Stories { get; set; }
